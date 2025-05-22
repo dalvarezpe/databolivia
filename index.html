@@ -1,0 +1,122 @@
+<<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EscalarData | Datos Abiertos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="#" class="logo">📊 EscalarData</a>
+                <ul class="nav-links">
+                    <li><a href="#" class="active">Inicio</a></li>
+                    <li><a href="#">Indicadores</a></li>
+                    <li><a href="#">Dashboards</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+<!-- BUSCADOR PRINCIPAL -->
+<section class="search-section">
+    <div class="container">
+        <div class="search-container">
+            <h2 class="search-title">🔍 Buscador de Datos</h2>
+            <form id="search-form" class="search-group">
+                <input type="text" id="search-input" class="search-input" placeholder="Ej: PIB, población, litio..." required>
+                <button type="submit" class="search-button">Buscar</button>
+            </form>
+            <div class="search-examples">
+                Prueba con: <a href="#" class="example-link">exportaciones</a>, <a href="#" class="example-link">turismo</a>
+            </div>
+        </div>
+    </div>
+</section>
+    <!-- DASHBOARDS DESTACADOS -->
+    <section class="dashboards-section">
+        <div class="container">
+            <h2 class="section-title">📈 Dashboards Populares</h2>
+            <div class="dashboard-grid">
+                <!-- Tarjeta 1 - Crecimiento Económico -->
+                <div class="dashboard-card">
+                    <div class="card-graphic pib">
+                        [Gráfico PIB]
+                    </div>
+                    <h3 class="card-title">Crecimiento Económico</h3>
+                    <p class="card-description">Por departamento (2023)</p>
+                </div>
+                
+                <!-- Tarjeta 2 - Producción Minera -->
+                <div class="dashboard-card">
+                    <div class="card-graphic mineria">
+                        [Mapa Minería]
+                    </div>
+                    <h3 class="card-title">Producción Minera</h3>
+                    <p class="card-description">Litio, estaño, plata</p>
+                </div>
+
+                <!-- Tarjeta 3 - Inflación -->
+                <div class="dashboard-card">
+                    <div class="card-graphic inflacion">
+                        [Gráfico IPC]
+                    </div>
+                    <h3 class="card-title">Inflación Anual</h3>
+                    <p class="card-description">Variación porcentual</p>
+                </div>
+
+                <!-- Tarjeta 4 - Exportaciones -->
+                <div class="dashboard-card">
+                    <div class="card-graphic exportaciones">
+                        [Gráfico Barras]
+                    </div>
+                    <h3 class="card-title">Exportaciones</h3>
+                    <p class="card-description">Por producto y destino</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DATOS RÁPIDOS -->
+    <section class="quick-stats">
+        <div class="container">
+            <h2 class="section-title">⚡ Datos Rápidos</h2>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon population">👥</div>
+                    <div>
+                        <p class="stat-label">Población Total</p>
+                        <p class="stat-value">12.3M</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon gdp">💰</div>
+                    <div>
+                        <p class="stat-label">PIB Per Cápita</p>
+                        <p class="stat-value">$3,450</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-row">
+                    <p class="copyright">© 2023 Copyright: <strong>Daniel Alvarez Perez</strong></p>
+                    <div class="footer-buttons">
+                        <a href="#" class="footer-button">For Recruiters</a>
+                        <a href="#" class="footer-button">API Docs</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
