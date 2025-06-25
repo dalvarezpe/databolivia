@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const navIndicadores = document.getElementById('nav-indicadores');
 
     // URL de tu túnel Cloudflare (cámbiala por la correcta cuando cambie)
-    const TUNNEL_URL = 'https://mia-limit-resumes-sagem.trycloudflare.com';
+    const TUNNEL_URL = 'https://household-paso-markets-inclusion.trycloudflare.com/';
     
     // Manejar búsqueda desde el formulario
     searchForm.addEventListener('submit', function(e) {
