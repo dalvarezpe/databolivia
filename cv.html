@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Daniel Alvarez - Data Engineer</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         :root {
             --bg-color: #343a40;
@@ -234,41 +235,48 @@
             flex-direction: column;
             justify-content: center;
         }
-        .download-resume-btn {
-            display: inline-block;
-            margin-top: 30px;
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            background-color: white;
-            color: var(--bg-color);
-            text-align: center;
-            line-height: 150px;
-            font-weight: 600;
-            text-decoration: none;
-            font-family: 'Montserrat', sans-serif;
-            font-size: 1rem;
-            transition: background-color 0.3s, color 0.3s;
-            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-        }
-        .download-resume-btn:hover {
-            background-color: var(--highlight-color);
-            color: white;
-        }
 
-.download-resume-btn:hover {
-    background-color: var(--highlight-color);
-    color: white;
-}
-
+        /* Modified profile image (oval shape) */
         .profile-img {
-            width: 200px;
-            height: 200px;
-            border-radius: 50%;
+            width: 220px;
+            height: 240px; /* Hacemos el alto mayor que el ancho para el efecto ovalado */
+            border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%; /* Esto crea un óvalo más alargado verticalmente */
             object-fit: cover;
             border: 5px solid var(--highlight-color);
             margin-bottom: 30px;
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Modified download button (smaller with download icon) */
+        .download-resume-btn {
+            display: inline-flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-top: 30px;
+            width: 105px; /* 70% del tamaño original (150px) */
+            height: 105px;
+            border-radius: 50%;
+            background-color: white;
+            color: var(--bg-color);
+            text-align: center;
+            font-weight: 600;
+            text-decoration: none;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 0.85rem;
+            transition: background-color 0.3s, color 0.3s;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+            padding: 10px;
+        }
+
+        .download-resume-btn i {
+            font-size: 1.5rem;
+            margin-bottom: 5px;
+        }
+
+        .download-resume-btn:hover {
+            background-color: var(--highlight-color);
+            color: white;
         }
         
         .name-title {
@@ -491,8 +499,10 @@
                     <h2 class="job-title">Data Engineer</h2>
                     <span class="location">based in <strong>Bolivia</strong></span>
                     <br>
-                    <a href="assets/pdf/resume.pdf" target="_blank" class="download-resume-btn">Resume</a>
-
+                    <a href="assets/pdf/resume.pdf" target="_blank" class="download-resume-btn">
+                        <i class="fas fa-download"></i>
+                        <span>Resume</span>
+                    </a>
                 </div>
             </div>
         </section>
